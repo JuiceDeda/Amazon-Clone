@@ -13,10 +13,11 @@ function Home() {
         />
         <div className="home__row">
           <Product
-          title="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold"
-          price={969.00}
-          rating={5}
-          image="https://images-na.ssl-images-amazon.com/images/G/01/appcore/laptop/nov2020npi/AMZ_FamilyStripe_MacBook_Pro_13_inch_M1._CB416900047_.png"
+         title="The 4-Hour Workweek, Expanded and Updated: Expanded and Updated"
+         price={16.25}
+         rating={4}
+         image="https://m.media-amazon.com/images/I/51pPn2LkI8L.jpg"
+         
           />
           <Product
           title="New Apple AirPods Max - Space Gray"
@@ -32,10 +33,10 @@ function Home() {
 
         <div className="home__row">
         <Product
-        title="The 4-Hour Workweek, Expanded and Updated: Expanded and Updated"
-        price={16.25}
-        rating={4}
-        image="https://m.media-amazon.com/images/I/51pPn2LkI8L.jpg"
+         title="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold"
+         price={969.00}
+         rating={5}
+         image="https://images-na.ssl-images-amazon.com/images/G/01/appcore/laptop/nov2020npi/AMZ_FamilyStripe_MacBook_Pro_13_inch_M1._CB416900047_.png"
         
         
         
