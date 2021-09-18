@@ -13,6 +13,7 @@ function Home() {
         />
         <div className="home__row">
           <Product
+           id="12321341"
          title="The 4-Hour Workweek, Expanded and Updated: Expanded and Updated"
          price={16.25}
          rating={4}
@@ -20,6 +21,7 @@ function Home() {
          
           />
           <Product
+          id="49538094"
           title="New Apple AirPods Max - Space Gray"
           price={367.49}
           rating={4}
@@ -33,6 +35,7 @@ function Home() {
 
         <div className="home__row">
         <Product
+         id="4903850"
          title="2020 Apple MacBook Air Laptop: Apple M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Gold"
          price={969.00}
          rating={5}
@@ -42,6 +45,7 @@ function Home() {
         
         />
         <Product
+           id="23445930"
          title="adidas Grand Court Men's Tennis Shoe"
          price={80.00}
          rating={4}
@@ -50,6 +54,8 @@ function Home() {
         
         />
         <Product
+    
+         id="3254354345"
          title="Apple Watch Series 6 (GPS + Cellular, 44mm) - Space Gray Aluminum Case with Black Sport Band"
          price={459.99}
          rating={4}
@@ -60,6 +66,7 @@ function Home() {
         </div>
         <div className="home__row">
         <Product
+        id="90829332"
          title="SAMSUNG LC24F390FHNXZA 24-inch Curved LED Gaming Monitor (Super Slim Design), 60Hz Refresh Rate w/AMD FreeSync Game Mode"
          price={299.99}
          rating={4}
