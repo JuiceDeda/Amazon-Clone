@@ -51,7 +51,7 @@ function Home() {
         <Product
          title="Apple Watch Series 6 (GPS + Cellular, 44mm) - Space Gray Aluminum Case with Black Sport Band"
          price={459.99}
-         rating={5}
+         rating={4}
          image="https://m.media-amazon.com/images/I/71yOGVLGWpL._AC_SL1500_.jpg"
         
         />

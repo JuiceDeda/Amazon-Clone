@@ -34,3 +34,9 @@ margin-top: 5px;
   height: 100px;
   margin-bottom: 15px;
 }
+
+.star__icon {
+  color: #f0c14b;
+  display: flex;
+  flex-direction: column;
+}
