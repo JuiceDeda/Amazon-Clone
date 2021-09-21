@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css'
+import "./Login.css";
 import { Link} from "react-router-dom";
 function Login() {
   return (
@@ -17,10 +17,12 @@ function Login() {
   <input type='text'/>
 <h5> Password</h5>
 <input type='password'/>
-<button>Sign In</button>
+<button type='submit' className='login__signInButton' >Sign In</button>
 
 </form>
-
+<p>  By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
+   see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notic  </p>
+  <button className='login__registerButton'>Create your Amazon Account</button>
 
 </div>
 </div>
