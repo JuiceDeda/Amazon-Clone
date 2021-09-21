@@ -7,18 +7,15 @@
  
  
  
- 
  .login__container {
-
-width: 30px;
-height: fit-content;
-display: flex;
-flex-direction: column;
-border-radius: 5px;
-border:1x solid lightgray;
-padding: 20px;
-
-  }
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
  
  
  
