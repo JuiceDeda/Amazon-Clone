@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Checkout from "./Checkout.js";
 import Login from "./Login.js";
 import { auth } from "./firebase.js";
-import firebase from "./firebase.js";
+
 import { useStateValue } from "./StateProvider";
 function App() {
 
