@@ -5,9 +5,8 @@ import Home from "./Home.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Checkout from "./Checkout.js";
 import Login from "./Login.js";
-import { auth } from "./firebase.js";
-
-import { useStateValue } from "./StateProvider";
+import { auth } from './firebase/firebase.js';
+import { useStateValue } from "./StateProvider.js";
 function App() {
 
   const [{}, dispatch] = useStateValue();
