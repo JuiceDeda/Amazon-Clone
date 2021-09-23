@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import "./Login.css";
-import { Link, useHistory } from "react-router-dom";
-import { auth } from "./firebase/firebase.js";
+import React, { useState } from 'react'
+import './Login.css'
+import { Link, useHistory } from 'react-router-dom'
+import { auth } from '../firebase/firebase.js'
+
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState('');
