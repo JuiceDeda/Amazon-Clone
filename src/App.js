@@ -8,10 +8,12 @@ import Login from "./components/Login";
 import { useStateValue } from "./context/StateProvider";
 import { auth } from "./firebase/firebase";
 import Payment from "./components/Payment";
-import {loadStripe} from "@stripe/stripe-js";
-import {Elements} from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+const promise = loadStripe(
+  "pk_test_51JdKXGHrRvMowm8hQxces6GHHBxQNU4MesW2tT8BGWiY1zDMlxejKQF9mR7WKoCtwBvW9zfp9vOakh4U5V9Qu77U00raAarEhr"
+);
 function App() {
-  const promise= loadStripe ('pk_test_51JdKXGHrRvMowm8hQxces6GHHBxQNU4MesW2tT8BGWiY1zDMlxejKQF9mR7WKoCtwBvW9zfp9vOakh4U5V9Qu77U00raAarEhr');
   const [{ user }, dispatch] = useStateValue();
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -46,7 +48,9 @@ function App() {
           </Route>
           <Route path="/payment">
             <Header />
-            <Payment />
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
