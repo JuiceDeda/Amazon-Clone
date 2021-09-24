@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "amazon-clone",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -11,9 +11,8 @@
     "@material-ui/icons": "4.11.2",
     "@mui/icons-material": "5.0.0-rc.1",
     "@mui/material": "5.0.0-rc.1",
-    "@types/react": "17.0.21",
-    "firebase": "^9.0.2",
-    "firebase-tools": "9.18.0",
+    "@types/react": "17.0.24",
+    "firebase": "8.9.1",
     "react": "17.0.2",
     "react-currency-format": "1.0.0",
     "react-dom": "17.0.2",
@@ -27,5 +26,7 @@
   },
   "devDependencies": {
     "react-scripts": "latest"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
