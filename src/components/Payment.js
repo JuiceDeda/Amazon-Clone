@@ -1,17 +1,17 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useStateValue } from "../context/StateProvider";
 import "./Payment.css";
 import CheckoutProduct from "./CheckoutProduct";
-import { Link, useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../context/reducer";
-import axios from '../axios';
+import axios from "../axios";
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
   const stripe = useStripe();
   const elements = useElements();
-const history = useHistory();
+  const history = useHistory();
   const [processing, setProcessing] = useState("");
   const [succeeded, setSucceeded] = useState(false);
   const [error, setError] = useState(null);
@@ -33,17 +33,18 @@ const history = useHistory();
     event.preventDefault();
     setProcessing(true);
 
-    const payload = await stripe.confirmCardPayment(clientSecret, {
-      payment_method: {
-        card: elements.getElement(CardElement)
-      }
-    }).then(({paymentIntent}) =>{
-
-      setSucceeded{true};
-      setError{null};
-      setProcessing{false};
- history.replace('orders')
-    })
+    const payload = await stripe
+      .confirmCardPayment(clientSecret, {
+        payment_method: {
+          card: elements.getElement(CardElement)
+        }
+      })
+      .then(({ paymentIntent }) => {
+        setSucceeded(true);
+        setError(null);
+        setProcessing(false);
+        history.replace("orders");
+      });
   };
 
   const handleChange = (e) => {
@@ -112,6 +113,13 @@ const history = useHistory();
       </div>
     </div>
   );
+
+  function newFunction() {
+    setSucceeded;
+    {
+      true;
+    }
+  }
 }
 
 export default Payment;
