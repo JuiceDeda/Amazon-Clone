@@ -8,8 +8,6 @@ import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../context/reducer";
 import axios from "../axios";
 
-
-
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
   const stripe = useStripe();
@@ -116,13 +114,6 @@ function Payment() {
       </div>
     </div>
   );
-
-  function newFunction() {
-    setSucceeded;
-    {
-      true;
-    }
-  }
 }
 
 export default Payment;
